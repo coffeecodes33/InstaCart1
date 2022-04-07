@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "63711702174",
+    "project_id": "instacart-fab15",
+    "storage_bucket": "instacart-fab15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63711702174:android:d4284def6661c4bba2df8f",
+        "android_client_info": {
+          "package_name": "com.example.instacart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63711702174-8q0tae20ohdqsejhcce11a13r72uv2jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfBlidRdfl_6NqqH2Jhal01D5Eg1lDumQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63711702174-8q0tae20ohdqsejhcce11a13r72uv2jc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
