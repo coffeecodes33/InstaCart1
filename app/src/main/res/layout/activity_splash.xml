@@ -6,11 +6,18 @@
     android:layout_height="wrap_content"
     tools:context=".SplashActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/applogo" />
+
+        app:lottie_rawRes="@raw/bike"
+
+
+
+    app:lottie_loop="true"
+
+    app:lottie_autoPlay="true" />
 
 </RelativeLayout>
 
