@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainSellerActivity">
+    tools:context=".activities.MainSellerActivity">
 
 
     <RelativeLayout
@@ -22,7 +22,7 @@
             android:layout_marginEnd="10dp"
             app:c_border="true"
             app:c_border_color="@color/white"
-            android:src="@drawable/ic_baseline_local_convenience_store_24"
+            android:src="@drawable/groceryimg"
             />
 
         <TextView
@@ -86,6 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:orientation="horizontal"
+
             android:background="@drawable/shape_rect03"
             android:layout_marginTop="25dp">
 
@@ -97,6 +98,7 @@
                 android:background="@drawable/shape_rect04"
                 android:text="Products"
                 android:textColor="@color/black"
+                android:layout_weight="1"
                 />
 <!--            <TextView-->
 <!--                android:id="@+id/tabOrdersTv"-->
@@ -120,6 +122,54 @@
         android:layout_below="@id/toolbarRl"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productsRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/filteredProductsTv"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_product_seller" >
+
+        </androidx.recyclerview.widget.RecyclerView>
+        
+        <EditText
+            android:id="@+id/searchProductEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:hint="Search"
+            android:layout_toStartOf="@id/filterProductBtn"
+            android:background="@drawable/shape_rect02"
+            android:drawableStart="@drawable/ic_baseline_search_24"/>
+
+
+        <ImageButton
+            android:id="@+id/filterProductBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_filter_alt_24"
+            />
+
+        <TextView
+            android:id="@+id/filteredProductsTv"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="Showing All"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/searchProductEt"
+            android:layout_height="wrap_content"/>
+
 
     </RelativeLayout>
 

@@ -16,22 +16,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InstaCart">
         <activity
-            android:name=".AddProductActivity"
+            android:name=".activities.ShopDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".MainUserActivity"
+            android:name=".activities.AddProductActivity"
             android:exported="false" />
         <activity
-            android:name=".MainSellerActivity"
+            android:name=".activities.MainUserActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterUserActivity"
+            android:name=".activities.MainSellerActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterSellerActivity"
+            android:name=".activities.RegisterUserActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".activities.RegisterSellerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,17 +42,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:exported="false" />
-
-<!--        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"-->
-<!--            android:theme="@style/Base.Theme.AppCompat"/>-->
-
     </application>
-
-
 
 </manifest>
