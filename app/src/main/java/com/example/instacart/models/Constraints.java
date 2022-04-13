@@ -5,7 +5,7 @@ public class Constraints {
    public static final String[] categories = {
             "Medicines",
             "Beauty and Personal Care",
-            "Breakfast and Dairy",
+            "Breakfast and Beverages",
             "Fruits",
             "Vegetables",
             "Pet Care",
@@ -17,7 +17,7 @@ public class Constraints {
             "All",
             "Medicines",
             "Beauty and Personal Care",
-            "Breakfast and Dairy",
+            "Breakfast and Beverages",
             "Fruits",
             "Vegetables",
             "Pet Care",

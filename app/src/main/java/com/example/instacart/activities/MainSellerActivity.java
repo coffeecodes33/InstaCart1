@@ -64,7 +64,7 @@ public class MainSellerActivity extends AppCompatActivity {
 
 
         emailTv= findViewById(R.id.emailTv);
-        logoutBtn = findViewById(R.id.logoutBtn);
+        logoutBtn = findViewById(R.id.addToCartBtn);
         addProductBtn = findViewById(R.id.addProductBtn);
         filterProductBtn = findViewById(R.id.filterProductBtn);
         productsRl = findViewById(R.id.productsRl);

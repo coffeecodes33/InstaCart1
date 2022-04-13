@@ -51,9 +51,10 @@ public class MainUserActivity extends AppCompatActivity {
         emailTv = findViewById(R.id.emailTv);
         phoneTv = findViewById(R.id.phoneTv);
         tabShopsTv = findViewById(R.id.tabShopsTv);
-        logoutBtn = findViewById(R.id.logoutBtn);
+        logoutBtn = findViewById(R.id.addToCartBtn);
         shopsRl = findViewById(R.id.shopsRl);
         shopsRv = findViewById(R.id.shopsRv);
+
 
 
         firebaseAuth = FirebaseAuth.getInstance();

@@ -36,7 +36,7 @@ public class ShopDetailsActivity extends AppCompatActivity {
 
     private ImageView shopIv;
     private TextView shopNameTv,phoneTv,emailTv,filteredProductsTv,openCloseTv,addressTv,deliveryFeeTv;
-    private ImageButton callBtn,logoutBtn,filterProductBtn;
+    private ImageButton callBtn,addToCartBtn,filterProductBtn;
     private EditText searchProductEt;
     private RecyclerView  productsRv;
 
@@ -63,7 +63,7 @@ public class ShopDetailsActivity extends AppCompatActivity {
         openCloseTv = findViewById(R.id.openCloseTv);
         addressTv = findViewById(R.id.addressTv);
         deliveryFeeTv = findViewById(R.id.deliveryFeeTv);
-        logoutBtn = findViewById(R.id.logoutBtn);
+        addToCartBtn = findViewById(R.id.addToCartBtn);
         callBtn = findViewById(R.id.callBtn);
         filterProductBtn = findViewById(R.id.filterProductBtn);
         searchProductEt = findViewById(R.id.searchProductEt);
@@ -102,10 +102,13 @@ public class ShopDetailsActivity extends AppCompatActivity {
         });
 
 
-        logoutBtn.setOnClickListener(new View.OnClickListener() {
+        addToCartBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+
+
+                startActivity(new Intent(ShopDetailsActivity.this, OfferPageActivity.class));
             }
         });
 
@@ -130,7 +133,8 @@ public class ShopDetailsActivity extends AppCompatActivity {
                                 filteredProductsTv.setText(selected);
                                 if (selected.equals("All")){
 
-                                    loadShopDetails();
+                                  //  loadShopDetails();
+                                    loadShopProducts();
                                 }else{
                                    adapterProductUser.getFilter().filter(selected);
                                 }

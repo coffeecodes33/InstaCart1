@@ -67,7 +67,7 @@
 
 
         <ImageButton
-            android:id="@+id/logoutBtn"
+            android:id="@+id/addToCartBtn"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/ic_baseline_power_settings_new_24"
